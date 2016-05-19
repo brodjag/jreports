@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Jackreports</string>
+
+
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+    To get one, follow this link, follow the directions and press "Create" at the end:
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=C4:96:20:ED:3B:AC:74:CE:2F:E0:1D:A0:EF:8F:92:61:D5:32:B8:70%3Bcom.jackreports
+    You can also add your credentials to an existing key, using this line:
+    C4:96:20:ED:3B:AC:74:CE:2F:E0:1D:A0:EF:8F:92:61:D5:32:B8:70;com.komoot.sampl4.ktraker
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+</resources>

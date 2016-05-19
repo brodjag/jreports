@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent" android:background="#fff"  android:orientation="vertical"
+    android:layout_height="match_parent">
+
+<LinearLayout  android:background="#fff" android:padding="10dp"
+    android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp" android:src="@drawable/onlist_ms_base" />
+
+    <LinearLayout android:padding="5dp"
+        android:layout_width="0dp" android:layout_weight="1" android:orientation="vertical"
+        android:layout_height="50dp">
+
+        <TextView android:id="@+id/title"
+            android:text="Roadside Inspection Site" android:textColor="#444"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/sub_title"
+            android:text="50mi   CA 99" android:textColor="#444"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent" android:background="#aaa"
+        android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+</LinearLayout>
+

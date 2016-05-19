@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.jackreports.MainActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  />
+
+<LinearLayout android:id="@+id/sliding_layout_contaner"
+    android:background="#0fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.jackreports.MainActivity">
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:gravity="bottom"
+
+    sothree:umanoInitialState="hidden"
+    sothree:umanoPanelHeight="300dp"
+    sothree:umanoShadowHeight="@dimen/swipe_shadow_height">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:background="#0fff"
+        android:layout_height="match_parent"></LinearLayout>
+
+
+    <LinearLayout android:id="@+id/marcs_recycler_view_contaner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/marcs_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+    <!--bottom panel -->
+    <LinearLayout android:id="@+id/bottom_panel"
+        android:layout_width="match_parent" android:background="@color/header_transporent" android:orientation="horizontal"
+        android:layout_height="60dp" android:layout_alignParentBottom="true">
+
+        <TextView android:id="@+id/show_list_bn"
+            android:text="SHOW LIST" android:paddingLeft="5dp"
+            android:gravity="center_vertical|left" android:textColor="#fff"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView android:id="@+id/filter_bn"
+            android:text="FILTER" android:paddingRight="5dp"
+            android:gravity="center_vertical|right" android:textColor="#fff"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <!--end bottom panel -->
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
